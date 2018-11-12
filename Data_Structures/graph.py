@@ -92,7 +92,6 @@ class Graph:
             visited[vertex] = True
             result.append(vertex)
             for neighbor in adjacencyList[vertex]:
-                print("Looking at vertex {} edge {}".format(vertex, neighbor))
                 if not visited.get(neighbor):
                     DFS(neighbor)
         DFS(start)
