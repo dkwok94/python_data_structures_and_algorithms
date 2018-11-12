@@ -64,3 +64,36 @@ class Graph:
             adjVert = self.adjacencyList[vertex].pop()
             self.removeEdge(vertex, adjVert)
         del self.adjacencyList[vertex]
+
+    def depthFirstRec(self, start):
+        '''
+            Traverses the graph via depth first traversal using recursion
+
+            Parameters:
+                start [string]: the starting point of the traversal
+
+            Returns:
+                A list representing the order of traversal of vertices
+        '''
+        result = []
+        visited = {}
+        adjacencyList = self.adjacencyList
+
+        def DFS(vertex):
+            '''
+                Depth first helper function
+
+                Parameters:
+                    vertex [string]: the current vertex being
+                    traversed
+            '''
+            if not vertex:
+                return None
+            visited[vertex] = True
+            result.append(vertex)
+            for neighbor in adjacencyList[vertex]:
+                print("Looking at vertex {} edge {}".format(vertex, neighbor))
+                if not visited.get(neighbor):
+                    DFS(neighbor)
+        DFS(start)
+        return result
