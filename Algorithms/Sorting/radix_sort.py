@@ -64,7 +64,16 @@ def radixSort(array):
             The sorted array
 
         Radix Sort:
-
+        1. Find the maximum number of digits in the array to sort
+        2. Loop an index for the place from 0 to the max number of 
+        digits less 1
+        3. Create a list of lists that will contain buckets for each
+        number from 0 to 9
+        4. For each number in the array, grab the digit at the specified
+        place and place it in the appropriate bucket using array indexing
+        5. Concatenate all digits in order of buckets by overwriting passed
+        in array
+        6. Repeat with the next digit place
     '''
     maxDigits = mostDigits(array)
     for place in range(0, maxDigits):
