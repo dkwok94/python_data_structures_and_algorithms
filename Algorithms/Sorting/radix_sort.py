@@ -6,6 +6,7 @@
 
 import math
 
+
 def getDigit(num, place):
     '''
         Gets the digit in number at a given place value
@@ -24,6 +25,7 @@ def getDigit(num, place):
 
     return (num // multiplier) % 10
 
+
 def digitCount(num):
     '''
         Returns the number of digits in the number
@@ -37,6 +39,7 @@ def digitCount(num):
     if num == 0:
         return 1
     return math.floor(math.log10(abs(num))) + 1
+
 
 def mostDigits(nums):
     '''
@@ -53,6 +56,7 @@ def mostDigits(nums):
         maxDigits = max(maxDigits, digitCount(nums[i]))
     return maxDigits
 
+
 def radixSort(array):
     '''
         Sort an array of integers using radix sort
@@ -65,7 +69,7 @@ def radixSort(array):
 
         Radix Sort:
         1. Find the maximum number of digits in the array to sort
-        2. Loop an index for the place from 0 to the max number of 
+        2. Loop an index for the place from 0 to the max number of
         digits less 1
         3. Create a list of lists that will contain buckets for each
         number from 0 to 9
