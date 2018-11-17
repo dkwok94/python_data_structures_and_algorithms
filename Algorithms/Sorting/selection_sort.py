@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 '''
     Selection sort algorithm
+
+    Selection sort works so you have two halves of the array:
+    the left side is sorted via minimum values and right side
+    is not.
+
+    Each time you iterate through the array, you keep track of
+    the minimum value and swap this value with the current
+    boundary index between left half and right half until sorted
 '''
 
 

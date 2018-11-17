@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 '''
     Insertion sort algorithm
+
+    Insertion sort is when you break up the array into halves and keep 
+    the left half of the array sorted while you iterate each index and 
+    place its value into the correct spot on the left side
 '''
 
 
@@ -46,5 +50,4 @@ def insertionSort(array):
             j -= 1
         array[j + 1] = currentVal
         i += 1
-        print(array)
     return array

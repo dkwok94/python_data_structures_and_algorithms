@@ -1,6 +1,16 @@
 #!/usr/bin/env python3
 '''
     Radix sort algorithm
+
+    Radix sort takes advantage of a property of integers
+    where the magnitude is proportional to the number of
+    digits.
+
+    You start at the rightmost digit and fill buckets labeled
+    0 through 9 based on this single digit for all numbers. 
+    Then the array is repopulated in the queue  order of the 
+    buckets and the digit of interest is shifted left to do 
+    the same
 '''
 
 

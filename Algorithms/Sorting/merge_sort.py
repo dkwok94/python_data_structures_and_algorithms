@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 '''
     Merge sort algorithm
+
+    Merge sort works by splitting the full array in halves at each
+    function call until you are left with a single element array
+    or no array
+
+    Then each array is merged with each right array in the same function
+    call frame until everything is merged in one final pass
 '''
 
 

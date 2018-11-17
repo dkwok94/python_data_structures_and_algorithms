@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 '''
     Quick sort algorithm
+
+    Quick sort uses something called a pivot such that all elements
+    less than the pivot will be placed to the left of the pivot
+    and all elements greater than the pivot will be on the right of
+    the pivot. In the end, the pivot will be in the right spot.
+
+    You do this recursively and thus, every single number eventually
+    becomes the pivot (in the correct place) in one of the frames 
+    such that collapsing all frames into one will have them all in order.
 '''
 
 

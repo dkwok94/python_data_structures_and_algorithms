@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 '''
     Bubble sort algorithm
+
+    Bubble sort iterates through the array and swaps neighboring
+    indices so that the maximum ends up on the right side, in place.
+
+    Then, it goes through again with a smaller subarray and does the
+    same thing. 
 '''
 
 
