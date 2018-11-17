@@ -8,7 +8,7 @@
     the pivot. In the end, the pivot will be in the right spot.
 
     You do this recursively and thus, every single number eventually
-    becomes the pivot (in the correct place) in one of the frames 
+    becomes the pivot (in the correct place) in one of the frames
     such that collapsing all frames into one will have them all in order.
 '''
 

@@ -2,8 +2,8 @@
 '''
     Insertion sort algorithm
 
-    Insertion sort is when you break up the array into halves and keep 
-    the left half of the array sorted while you iterate each index and 
+    Insertion sort is when you break up the array into halves and keep
+    the left half of the array sorted while you iterate each index and
     place its value into the correct spot on the left side
 '''
 
