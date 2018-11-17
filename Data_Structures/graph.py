@@ -96,3 +96,55 @@ class Graph:
                     DFS(neighbor)
         DFS(start)
         return result
+
+    def depthFirstIter(self, start):
+        '''
+            Performs depth first traversal using an iterative
+            algorithm
+
+            Parameters:
+                start [string]: the starting key for the traversal
+
+            Returns:
+                An array containing the traversal order
+        '''
+        visited = {}
+        results = []
+        stack = [start]
+
+        visited[start] = True
+        while len(stack):
+            currentVertex = stack.pop()
+            results.append(currentVertex)
+
+            for neighbor in self.adjacencyList[currentVertex]:
+                if not visited.get(neighbor):
+                    visited[neighbor] = True
+                    stack.append(neighbor)
+        return results
+
+    def breadthFirst(self, start):
+        '''
+            Traverses the graph using breath first search
+            algorithm
+
+            Parameters:
+                start [string]: The starting key to use for traversal
+
+            Returns:
+                An array showing the traversal order
+        '''
+        queue = [start]
+        results = []
+        visited = {}
+        visited[start] = True
+
+        while len(queue):
+            currentVertex = queue.pop(0)
+            results.append(currentVertex)
+
+            for neighbor in self.adjacencyList[currentVertex]:
+                if not visited.get(neighbor):
+                    visited[neighbor] = True
+                    queue.append(neighbor)
+        return results
